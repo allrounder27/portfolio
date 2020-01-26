@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+  overflow: hidden;
+  position: absolute;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.header-content {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  display: block;
+}
+
+.logo {
+  padding-left: 0;
+  padding-top: 40px;
+  color: white;
+  width: 70%;
+  display: block;
+  font-family: 'Sacramento', cursive;
+  font-size: 50px;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+h1 {
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  top: 200px;
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 100px;
+}
+
+h2 {
+  margin-top:  100px;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  width: 100%;
+  color: #3282b8;
+  font-size: 50px;
+}
+
+.developer {
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  top: 400px;
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 40px;
+}
+
+.about {
+  height: 70%;
+}
+
+.about-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* animation: mymove 2s; */
+}
+
+.card {
+  width: 15%;
+  margin: 10px auto;
+  /* animation: mymove 2s; */
+}
+
+/* @keyframes mymove {
+  to {top: 0px;}
+  from {top: 200px;}
+} */
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.contain {
+  padding: 2px 16px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.contact {
+  background-color: #1b262c;
+  height: 100%;
+}
+
+.contacttext {
+  color: white;
+  margin-top: 100px;
+  padding-top: 50px;
+}
+
+.social {
+  margin: 20px;
+  height: 100px;
+  width: 100px;
+}
+
+input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  font-size: 20px;
+  width: 50%;
+  background-color: #3282b8;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #0f4c75;
+  font-size: 25px;
+}
+
+label {
+  color: white;
+  font-size: 30px;
+}
+
+.col-25 {
+  margin: 5px;
+  padding: 5px;
+}
+
+.col-75 {
+  margin: 5px;
+  padding: 5px;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: row;
+}
+
+.form {
+  border-radius: 5px;
+  padding: 20px;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.me {
+  border-radius: 50%;
+  height: 500px;
+  width: 500px;
+}
+
+.social-handles {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+}
+.social-icon{
+  display: block;
+}
+.copyright{
+  text-align: center;
+  font-size: 25px;
+}
+
+@media only screen and (max-width:1000px) {
+  .about-cards {
+    flex-direction: column;
+  }
+
+  .projects {
+    margin-top: 1000px;
+  }
+
+  .card {
+    width: 50%;
+  }
+
+  .contact-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form {
+    align-self: center;
+  }
+
+  .bg {
+    height: 50%;
+  }
+  #contact-form{
+    width: 1000px;
+    align-self: center;
+    margin-left: 500px;
+  }
+}
