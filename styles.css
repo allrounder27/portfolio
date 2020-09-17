@@ -223,9 +223,9 @@ label {
   .bg {
     height: 50%;
   }
-  #contact-form{
-    width: 1000px;
+  /* #contact-form{
+    width: 800px;
     align-self: center;
     margin-left: 500px;
-  }
+  } */
 }
